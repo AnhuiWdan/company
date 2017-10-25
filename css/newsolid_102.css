@@ -1,0 +1,646 @@
+﻿body {
+    height: 100%;
+    background: #71b1e8 url("../Images/background.jpg") no-repeat fixed top center;
+}
+
+#divNotRun {
+    height: 100px;
+    text-align: center;
+    display: none;
+}
+
+#jqContent {
+    margin: 70px auto 0px !important;
+    padding-top: 0px;
+    text-align: left;
+}
+
+#headerCss {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: white no-repeat;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#divMa {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border: 1px solid #DBDBDB;
+    width: 200px;
+    height: 220px;
+    background: white;
+}
+
+#divS {
+    background: #000;
+    position: absolute;
+    z-index: 30000;
+    width: 100%;
+    height: 3000px;
+    left: 0px;
+    top: 0px;
+    filter: alpha(opacity=61);
+    opacity: 0.61;
+}
+
+#loadbox {
+    border: 2px solid #1F497D;
+    position: absolute;
+    top: 300px;
+    left: 432px;
+    font-size: 12px;
+    width: 400px;
+    height: 100px;
+    background-color: #4F81BD;
+    text-align: center;
+    color: #ffffff;
+    z-index: 50000;
+}
+
+#loadbox .loading {
+    height: 30px;
+    padding: 2px;
+    text-align: left;
+}
+
+#loadbox .err {
+    color: red;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#mainCss {
+    background: white;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#footercss {
+    width: 920px;
+    margin: 0 auto;
+    background: white;
+    height: 20px;
+}
+
+.surveyhead h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #366dcc;
+}
+
+.fieldset {
+    border: 0;
+}
+
+.surveydescription {
+    color: #555555;
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+input.submitbutton {
+    border: 1px solid #2d64c3;
+    background: #366dcc;
+}
+
+input.submitbutton_hover, input.submitbutton:hover {
+    background: #477cd9;
+    color: #fff !important;
+}
+
+/*box*/
+.survey {
+    width: 780px;
+    line-height: 20px;
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.surveyhead {
+    line-height: 20px;
+    text-align: center;
+    width: 96%;
+    padding: 40px 2% 30px;
+    border: 0px;
+}
+
+.surveyhead h1 {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #f53d05;
+    vertical-align: middle;
+    margin: 0;
+    padding: 15px 0;
+    line-height: 24px;
+    position: relative;
+}
+
+.div_question {
+    border: 2px solid white;
+    padding: 4px;
+    clear: both;
+    margin: 2px auto 10px;
+    width: 96%;
+    height: auto;
+}
+
+.div_title_question_all {
+    padding-top: 2px;
+    font-size: 15px;
+    color: #444444;
+    font-weight: bold;
+    height: auto;
+    line-height: 20px;
+}
+
+.div_topic_question {
+    width: 28px;
+    float: left;
+}
+
+.div_title_question {
+    overflow: hidden;
+    zoom: 1;
+}
+
+span.req {
+    color: red;
+    font-weight: bold;
+}
+
+.div_table_radio_question {
+    clear: both;
+    padding-top: 5px;
+    padding-left: 24px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 15px;
+    color: #333333;
+    _padding-left: 27px;
+}
+
+.div_table_radio_question ul {
+    clear: both;
+}
+
+.div_table_radio_question li {
+    margin-bottom: 2px;
+    width: 32.333%;
+}
+.div_table_radio_question li:hover{
+    background-color: #f1f1f1;
+}
+.div_table_radio_question li label, .div_table_radio_question li input, .div_table_radio_question td input {
+    cursor: pointer;
+}
+.div_table_radio_question li img {
+    display: block;
+}
+
+.div_table_clear_top {
+    clear: both;
+    margin-top: 4px;
+}
+
+.jqRadio {
+    background: transparent url(../images/radio.gif) no-repeat;
+    vertical-align: middle;
+    height: 16px;
+    width: 18px;
+    _font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+}
+.jqRadioed{
+    background: url("../images/radio.gif") no-repeat 0 -16px;
+}
+
+.jqCheckbox {
+    background: transparent url(../images/checkbox.gif) no-repeat;
+    vertical-align: middle;
+    height: 16px;
+    width: 18px;
+    _font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+}
+#divquestion9 .jqRadioed{
+    background-position: 0 -16px;
+}
+
+
+.div_title_attr_question {
+    border: 1px solid #cccccc;
+    margin: 5px 10px 10px;
+    padding: 5px;
+    font-size: 12px;
+    background: #cfe7ff;
+}
+
+.div_btn_confirm_attr_question {
+    margin: 5px 10px 10px;
+    padding: 5px;
+    font-size: 12px;
+    float: right;
+}
+
+.div_type_attr_question {
+    border: 1px solid #6290d2;
+    margin: 5px 10px 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.div_jump_attr_question {
+    border: 1px solid #6290d2;
+    margin: 5px 10px 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.div_default_attr_question {
+    border: 1px solid #cccccc;
+    margin: 5px 10px 10px;
+    padding: 5px;
+    background: #cfe7ff;
+    font-size: 12px;
+}
+
+.qtypetip {
+    color: #0066FF;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+legend {
+    display: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+.shop-item {
+    position: relative;
+    float: left;
+    width: 200px;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0 2px 2px #EBEBEB;
+    margin-bottom: 8px !important;
+    margin-right: 15px;
+}
+
+.shop-item:hover {
+    border: 1px solid #95CDF3;
+    box-shadow: 0 2px 3px #B9DFF0;
+}
+
+.shop-item .img_place {
+    width: 190px;
+    height: 126px;
+    margin: 2px auto 4px;
+    overflow: hidden;
+}
+
+.shop-item .img_place img {
+    border: none;
+    margin: 0 auto;
+}
+
+.shop-item .text_place {
+    height: 95px;
+    position: relative;
+    margin: 0 8px;
+}
+
+.haspic .item_name {
+    position: absolute;
+    left: 46%;
+    top: 0;
+    width: 50%;
+    height: 6em;
+}
+
+.shop-item .item_name {
+    width: 189px;
+    display: block;
+    margin-left: 8px;
+    color: #333;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    max-height: 32px;
+    height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shop-item .item_select {
+    margin-left: 8px;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 20;
+}
+
+.shop-item .item_price {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0077B3;
+    margin-right: 5px;
+    position: absolute;
+    text-align: right;
+    top: 49px;
+    right: 0;
+}
+
+.item_select .operation {
+    display: inline-block;
+    height: 34px;
+    border: 1px solid #ABABAB;
+    width: 34px;
+    line-height: 33px;
+    text-align: center;
+    background: #EEE;
+    vertical-align: top;
+    padding: 0;
+    cursor: pointer;
+    float: left;
+}
+
+.item_select .remove {
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.item_select .add {
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+.item_select .remove:hover, .item_select .add:hover {
+    color: #0077B3;
+    background: #fff;
+}
+
+.item_select .itemnum {
+    outline: 0 none;
+    font-size: 12px;
+    cursor: default;
+    margin: 0;
+    background: #fff;
+}
+
+.shopcart {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ACACAC;
+    background: #FFF;
+}
+
+.productslist {
+    border-bottom: 1px dashed #CCC;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.productitem {
+    padding: 4px;
+    position: relative;
+    font-size: 12px;
+    height: 33px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.productitem:last-child {
+    border-bottom: 0;
+}
+
+.productitem .fpname {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 60%;
+    height: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productitem .fpnum {
+    position: absolute;
+    left: 60%;
+    top: 8px;
+    width: 10%;
+    height: 32px;
+}
+
+.productitem .fpprice {
+    position: absolute;
+    left: 70%;
+    top: 8px;
+    width: 30%;
+    height: 32px;
+    text-align: right;
+    color: #0077B3;
+}
+
+.ftotalprice {
+    text-align: right;
+    font-size: 14px;
+    color: #0077B3;
+    font-weight: bold;
+}
+
+#loading {
+    background: url(../images/bgprogressbg.gif) no-repeat 0px 0px;
+    height: 120px;
+    width: 15px;
+    float: left;
+    border: 1px #d6ebf7 solid;
+}
+
+#loadcss {
+    display: block;
+    background: url(../images/progressbarbar.gif);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+    width: 15px;
+    line-height: 15px;
+    height: 0%;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+/*选项说明中 点击查看详情的 竖向滚动条*/
+#divDescPop {
+    overflow: auto;
+}
+
+#rbbox {
+    display: none;
+    height: 70px;
+}
+
+#divDescPopData {
+    padding: 10px;
+    overflow: auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+#divTimeUpTip {
+    padding: 10px;
+    overflow: auto;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.leftbar {
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    padding: 8px 0;
+}
+
+#loadprogress {
+    font-weight: bold;
+    visibility: hidden;
+}
+
+#divSaveText{
+    float: left; width: 14px; line-height: 0;
+}
+
+#submit_div{
+    padding-top: 6px;clear:both; padding-bottom:10px;
+}
+#submit_table{
+    width: 100%;
+    margin:0 auto;
+}
+.div_table_radio_question li {
+    float: left;
+    list-style-type: none;
+}
+
+.ulradiocheck li {
+    line-height: 30px;
+    position: relative;
+}
+.ulradiocheck li input {
+    position: absolute;
+    top: 6px;
+}
+
+.ulradiocheck li label {
+    display: block;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+.layer{
+    position: absolute;
+    display: none;
+    width: 400px;
+    top: 300px;
+    padding-bottom: 20px;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+}
+.layer .header{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #ddd;
+}
+.layer .header .close{
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-right: 14px;
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    background: url("../images/close.png") no-repeat center;
+    background-size: 18px 18px;
+}
+.layer .content{
+    padding: 10px 20px;
+    text-align: left;
+    text-indent: 2em;
+    color: #333333;
+    line-height: 28px;
+    font-size: 16px;
+}
+.layer .btn{
+    width: 100px;
+    margin: 10px auto 0;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #f24546;
+}
+.layer .btn:hover{
+    background-color: #F21C19;
+}
+.div_table_clear_bottom {
+    clear: both;
+    margin-bottom: 10px;
+}
+.fixed{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    top: 0;
+    left: 0;
+}
+
+.errorMessage {
+    display: none;
+    padding-left: 20px;
+    color: Red;
+    margin-left: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat 0 3px;
+}
+
+/* 继续报名页面 */
+#box .next-btn {
+    display: block;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f24546;
+    border-radius: 5px;
+    margin: 40px auto 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+#box .next-btn:hover {
+    background-color: #F21C19;
+}
